@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.carrentalapp">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Car Rental App"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+
+        <!-- SPLASH (LAUNCHER) -->
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <!-- AUTH -->
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false"/>
+
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false"/>
+
+        <!-- USER -->
+        <activity
+            android:name=".HomeActivity"
+            android:exported="false"/>
+
+        <activity
+            android:name=".CarDetailActivity"
+            android:exported="false"/>
+
+        <activity
+            android:name=".BookingActivity"
+            android:exported="false"/>
+
+        <!-- ADMIN -->
+        <activity
+            android:name=".AdminDashboardActivity"
+            android:exported="false"/>
+
+        <activity
+            android:name=".AddCarActivity"
+            android:exported="false"/>
+
+        <!-- OPTIONAL -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"/>
+
+    </application>
+
+</manifest>
